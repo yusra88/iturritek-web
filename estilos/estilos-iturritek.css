@@ -19,20 +19,7 @@
     }
 
 
-.socialPromise__list--parallax{
-    overflow: scroll;
-   background-image: url(../imagenes/parallax.jpg);
-   background-attachment: fixed;
-    background-size:contain;
-    background-position:center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    
-   
-}
-::-webkit-scrollbar{
-    display: none;
-}
+
 /* ------------------INICIO HEADER------------------- */
 .Cont-header{
     width: 100%;
@@ -44,13 +31,24 @@
 .aboutUs{
     width: 100%;
     height: 80vh;
-    background-color: white;
 }
 
+/* ------------------INICIO SOCIAL PROMISE------------------- */
 .socialPromise{
     width: 100%;
     height: 60vh;
-  
+}
+.socialPromise__list--parallax{
+    overflow: scroll;
+   background-image: url(../imagenes/parallax.jpg);
+   background-attachment: fixed;
+    background-size:contain;
+    background-position:center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;  
+}
+::-webkit-scrollbar{
+    display: none;
 }
 .socialPromise__list--parallax{
     height: 60vh;
@@ -64,7 +62,6 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
-  
  }
 .socialPromise__article--title{
     font-family: var(--fuentetitulo);
@@ -73,15 +70,16 @@
     justify-content: center;
     padding-bottom: 3%;
     text-decoration: underline var(--azul-pag);
-    
 }
-
 .socialPromise__article--paragraph{
     font-family: var(--fuenteparrafo);
     font-size: clamp(1.3rem, 1.5vw, 2rem);
     margin-left: 3%;
 }
+/* ------------------FIN SOCIAL PROMISE------------------- */
 
+
+/* ------------------INICIO SERVICES------------------- */
 .services{
     width: 100%;
     height: 300vh;
