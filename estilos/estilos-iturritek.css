@@ -5,13 +5,15 @@
 }
 @font-face {
     font-family: Roboto-Bold;
-    src: url(fuentes\Roboto-Bold.ttf);
+    src: url(../fuentes/Roboto-Bold.ttf);	
   }
   @font-face {
     font-family: Roboto-Medium;
-    src: url(fuentes\Roboto-Medium.ttf);
+    src: url(../fuentes/Roboto-Medium.ttf);
   }
 :root{
+    --fuentetitulo:"Roboto-Bold";
+    --fuenteparrafo:"Roboto-Medium";
    --naranja-pag:rgba(254, 129, 1, 1);
    --azul-pag:rgba(60, 160, 216, 1);
     }
@@ -53,7 +55,30 @@
 }
 .socialPromise__article{
     width: 100%;
+    padding-top: 5%;
  }
+ .socialPromise__article__cont--flex{
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  
+ }
+.socialPromise__article--title{
+    font-family: var(--fuentetitulo);
+    font-size: clamp(2.5rem, 1.5vw, 2rem);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3%;
+    text-decoration: underline var(--azul-pag);
+    
+}
+
+.socialPromise__article--paragraph{
+    font-family: var(--fuenteparrafo);
+    font-size: clamp(1.3rem, 1.5vw, 2rem);
+    margin-left: 3%;
+}
 
 .services{
     width: 100%;
