@@ -25,12 +25,14 @@
     background-position:center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    
    
 }
 ::-webkit-scrollbar{
     display: none;
 }
-.header-iturritek{
+/* ------------------INICIO HEADER------------------- */
+.Cont-header{
     width: 100%;
     height: 100vh;
     background-image: url(../imagenes/header-background.png);
